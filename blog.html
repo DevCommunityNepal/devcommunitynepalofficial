@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>DEV Community Nepal</title>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-black px-4 py-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div>
+          <a href="/" class="text-white font-bold text-lg"
+            >DEV Community Nepal</a
+          >
+        </div>
+        <div class="flex items-center">
+          <div class="hidden sm:block">
+            <a href="/" class="text-white mr-4">Home</a>
+            <a href="/blog.html" class="text-white mr-4">Blog</a>
+            <a href="/about.html" class="text-white mr-4">About Us</a>
+            <a href="/contact.html" class="text-white mr-4">Contact Us</a>
+            <a href="/login.html" class="text-white mr-4">Login</a>
+            <a href="/signup.html" class="text-white mr-4">Sign Up</a>
+          </div>
+          <div class="sm:hidden">
+            <button
+              id="hamburger-btn"
+              type="button"
+              class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                class="h-6 w-6 fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="hidden"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"
+                />
+                <path
+                  class="block"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6 9h12V7H6v2zm0 5h12v-2H6v2zm0 5h12v-2H6v2z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <div class="bg-white py-8 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Our Latest Blogs
+          </h2>
+          <p class="mt-2 text-lg leading-8 text-gray-600">
+            Learn about the experiences and learnings of our community members.
+          </p>
+          <div class="mt-8 flex justify-start">
+            <div class="relative">
+              <input
+                type="text"
+                class="block w-full rounded-md border border-black shadow-sm px-4 py-2 placeholder-gray-400 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                placeholder="Search..."
+              />
+              <div
+                class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
+              >
+                <svg
+                  class="h-5 w-5 text-gray-400"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21 21l-4.35-4.35M15 10a5 5 0 11-10 0 5 5 0 0110 0z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        >
+          <!-- 1st posts... -->
+
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >May 12, 2023</time
+              >
+              <a
+                href="#"
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >Machine Learning</a
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+              >
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Start your career in the ML and AI
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                " It is the science and engineering of making intelligent
+                machines, especially intelligent computer programs. It is
+                related to the similar task of using computers to understand
+                human intelligence, but AI does not have to confine itself to
+                methods that are biologically observable."
+              </p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img
+                src="./images/jatin.jpg"
+                alt=""
+                class="h-10 w-10 rounded-full bg-gray-50"
+              />
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Jatin Bhusal
+                  </a>
+                </p>
+                <p class="text-gray-600">Group Expert / AI Enthusiasts</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2nd posts... -->
+
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >May 25, 2023</time
+              >
+              <a
+                href="#"
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >Coding</a
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+              >
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  How to be start your Coding Journey?
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                Coding, sometimes called computer programming, is how we
+                communicate with computers. Code tells a computer what actions
+                to take, and writing code is like creating a set of
+                instructions. By learning to write code, you can tell computers
+                what to do or how to behave in a much faster way. You can use
+                this skill to make websites and apps, process data, and do lots
+                of other cool things.
+              </p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img
+                src="./images/sushant.jpg"
+                alt=""
+                class="h-10 w-10 rounded-full bg-gray-50"
+              />
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Sushant Rimal
+                  </a>
+                </p>
+                <p class="text-gray-600">Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3rd posts... -->
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >Mar 16, 2023</time
+              >
+              <a
+                href="#"
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >UX UI Designing</a
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+              >
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Design your application in Figma
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                UI refers to the screens, buttons, toggles, icons, and other
+                visual elements that you interact with when using a website,
+                app, or other electronic device. UX refers to the entire
+                interaction you have with a product, including how you feel
+                about the interaction.
+              </p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img
+                src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+                class="h-10 w-10 rounded-full bg-gray-50"
+              />
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Abhishek Adhikari
+                  </a>
+                </p>
+                <p class="text-gray-600">Community Experts / Designer</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- 2nd Line of Blog -->
+        <div
+          class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        >
+          <!-- 1st posts... -->
+
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >May 12, 2023</time
+              >
+              <a
+                href="#"
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >Machine Learning</a
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+              >
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Start your career in the ML and AI
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                " It is the science and engineering of making intelligent
+                machines, especially intelligent computer programs. It is
+                related to the similar task of using computers to understand
+                human intelligence, but AI does not have to confine itself to
+                methods that are biologically observable."
+              </p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img
+                src="./images/jatin.jpg"
+                alt=""
+                class="h-10 w-10 rounded-full bg-gray-50"
+              />
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Jatin Bhusal
+                  </a>
+                </p>
+                <p class="text-gray-600">Group Expert / AI Enthusiasts</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2nd posts... -->
+
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >May 25, 2023</time
+              >
+              <a
+                href="#"
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >Coding</a
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+              >
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  How to be start your Coding Journey?
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                Coding, sometimes called computer programming, is how we
+                communicate with computers. Code tells a computer what actions
+                to take, and writing code is like creating a set of
+                instructions. By learning to write code, you can tell computers
+                what to do or how to behave in a much faster way. You can use
+                this skill to make websites and apps, process data, and do lots
+                of other cool things.
+              </p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img
+                src="./images/sushant.jpg"
+                alt=""
+                class="h-10 w-10 rounded-full bg-gray-50"
+              />
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Sushant Rimal
+                  </a>
+                </p>
+                <p class="text-gray-600">Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3rd posts... -->
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >Mar 16, 2023</time
+              >
+              <a
+                href="#"
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >UX UI Designing</a
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+              >
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Design your application in Figma
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                UI refers to the screens, buttons, toggles, icons, and other
+                visual elements that you interact with when using a website,
+                app, or other electronic device. UX refers to the entire
+                interaction you have with a product, including how you feel
+                about the interaction.
+              </p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img
+                src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+                class="h-10 w-10 rounded-full bg-gray-50"
+              />
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Abhishek Adhikari
+                  </a>
+                </p>
+                <p class="text-gray-600">Community Experts / Designer</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subscribe to newspaper section -->
+    <div
+      class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="max-w-xl lg:max-w-lg">
+            <h2
+              class="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            >
+              Subscribe to our newsletter.
+            </h2>
+            <p class="mt-4 text-lg leading-8 text-gray-300">
+              Get weekly updates and announcements about the sessions, workshops
+              from the community
+            </p>
+            <div class="mt-6 flex max-w-md gap-x-4">
+              <label for="email-address" class="sr-only">Email address</label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                placeholder="Enter your email"
+              />
+              <button
+                type="submit"
+                class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+            <div class="flex flex-col items-start">
+              <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                  />
+                </svg>
+              </div>
+              <dt class="mt-4 font-semibold text-white">Weekly articles</dt>
+              <dd class="mt-2 leading-7 text-gray-400">
+                Get all the articles and blog posts from our community experts
+                and users from around the Nepal through our e-mail newspaper.
+              </dd>
+            </div>
+            <div class="flex flex-col items-start">
+              <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002"
+                  />
+                </svg>
+              </div>
+              <dt class="mt-4 font-semibold text-white">What's Next?</dt>
+              <dd class="mt-2 leading-7 text-gray-400">
+                Wants to know about the upcoming sessions, workshops, bootcamps,
+                seminars and trainings, stay updated and stay tuned with DEV
+                Community Nepal
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div
+        class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="bg-gray-900 py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white">
+          © 2023 DEV Community Nepal. All Rights Reserved.
+        </div>
+        <div>
+          <p class="text-white">Developed by Sushant Rimal</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
